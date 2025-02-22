@@ -1,0 +1,51 @@
+{
+    "statuses": [
+        {
+            "index": null,
+            "stage": "Création de la demande",
+            "service": "ANEF",
+            "api_code": "DRAFT",
+            "comments": null
+        },
+        {
+            "index": "1.1",
+            "stage": "Dépôt de la demande",
+            "service": "PREFECTURE",
+            "api_code": "VERIFICATION_FORMELLE_A_TRAITER",
+            "comments": [
+                {
+                    "language": "en",
+                    "comment": "The competent prefecture has received your request. You have received an email with your national number. Your file is in the queue for the first screening."
+                },
+                {
+                    "language": "fr",
+                    "comment": "La préfecture compétente a bien reçu votre demande. Vous avez reçu un mail contenant votre numéro national. Votre dossier est dans la file d'attente pour effectuer le premier tri."
+                },
+                {
+                    "language": "es",
+                    "comment": "La prefectura competente ha recibido su solicitud. Ha recibido un correo electrónico con su número nacional. Su expediente está en la cola de espera para la primera revisión."
+                }
+            ]
+        },
+        {
+            "index": "2.1.1",
+            "stage": "Examen des pièces en cours",
+            "service": "PREFECTURE",
+            "api_code": "VERIFICATION_FORMELLE_EN_COURS",
+            "comments": [
+                {
+                    "language": "en",
+                    "comment": "The prefecture is conducting the first screening to check if your request is valid. This is a quick 'formal' verification."
+                },
+                {
+                    "language": "fr",
+                    "comment": "La préfecture est en train de faire le premier tri sur votre dossier pour voir si votre demande tient la route, c'est une vérification rapide ('formelle')."
+                },
+                {
+                    "language": "es",
+                    "comment": "La prefectura está realizando la primera revisión para verificar si su solicitud es válida. Se trata de una verificación rápida ('formal')."
+                }
+            ]
+        }
+    ]
+}

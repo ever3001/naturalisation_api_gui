@@ -1,0 +1,233 @@
+[project]
+name = "anef_checker"
+version = "0.1.0"  # version updated by bumpver
+description = "A simple Checker to see the naturalisation process"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "GPL-3.0-or-later"
+authors = [
+  { name = "Ever ATILANO", email = "ever.developer3001@gmail.com" },
+]
+maintainers = [
+  { name = "Ever ATILANO", email = "ever.developer3001@gmail.com" },
+]
+classifiers = [
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Typed",
+]
+
+# Runtime dependencies.
+dependencies = [
+  "chromedriver-autoinstaller>=0.6.4",
+  "flet[all]>=0.27.1",
+  "loguru>=0.7.3",
+  "pydantic>=2.10.6",
+  "pydantic-settings>=2.8.0",
+  "python-dotenv>=1.0.1",
+  "selenium>=4.29.0",
+  "typer>=0.15.1",
+]
+
+# Optional dependency groups.
+[dependency-groups]
+test = [
+  "pytest>=8.3.4",
+  "pytest-cov>=6.0.0",
+  "tox>=4.24.1",
+]
+lint = [
+  "black>=24.10.0",
+  "isort>=5.13.2",
+  "mypy>=1.15.0",
+  "pre-commit>=4.1.0",
+  "ruff>=0.9.6",
+]
+dev = [
+  "bumpver>=2024.1130",
+  "pillow>=11.1.0",
+  "pyinstaller>=6.12.0",
+  "twine>=6.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+artifacts = [
+    "src/anef_checker/database/*.json",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/anef_checker"]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"src/anef_checker/py.typed" = "anef_checker/py.typed"
+"src/anef_checker/database/status_data.json" = "anef_checker/database/status_data.json"
+
+[project.scripts]
+anef_checker = "anef_checker.cli.cli:app"
+anef_checker_gui = "anef_checker.gui.gui:main"
+
+###############################################################################
+# Tool configurations (for pytest, black, isort, ruff, mypy, etc.)            #
+###############################################################################
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "chore: bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"  # version updated by bumpver']
+
+[tool.pytest.ini_options]
+minversion = "7.3"
+addopts = [
+    "-ra",
+    "-vvv",
+    "-l",
+    "--doctest-modules",
+    "--color=yes",
+    "--code-highlight=yes",
+    "--log-disable=faker",
+    "--log-disable=asyncio",
+]
+testpaths = ["tests"]
+doctest_optionflags = [
+    "NORMALIZE_WHITESPACE",
+    "ELLIPSIS",
+]
+python_functions = ["it_*", "test_*"]
+log_cli = true
+log_cli_level = "WARNING"
+log_auto_indent = true
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+skip-string-normalization = true
+
+[tool.isort]
+line_length = 120
+profile = "black"
+multi_line_output = 3
+force_grid_wrap = 2
+
+[tool.ruff]
+fix = true
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "tests",
+]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+fixable = ["ALL"]
+ignore = [
+    "ANN101",
+    "TCH001",
+    "PLE1205",
+    "D203",
+    "D213",
+]
+select = [
+    "A",
+    "ANN",
+    "ARG",
+    "B",
+    "BLE",
+    "C",
+    "C4",
+    "COM",
+    "D",
+    "DTZ",
+    "E",
+    "ERA",
+    "F",
+    "FBT",
+    "G",
+    "I",
+    "INP",
+    "N",
+    "PGH",
+    "PIE",
+    "PLE",
+    "PLR",
+    "PT",
+    "PTH",
+    "Q",
+    "RSE",
+    "RET",
+    "S",
+    "SIM",
+    "SLF",
+    "T20",
+    "TID",
+    "TCH",
+    "W",
+    "YTT",
+]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+"test/**/*.py" = ["ANN201", "ANN001", "D100", "D103", "D104", "S101"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+multiline-quotes = "single"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+strict = true
+disallow_untyped_defs = true
+disallow_any_unimported = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true
+exclude = '(tests/.*|.venv/.*|build/.*|dist/.*)'

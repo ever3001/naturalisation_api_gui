@@ -1,6 +1,6 @@
 [project]
 name = "anef_checker"
-version = "0.1.0"  # version updated by bumpver
+version = "1.0.0"  # version updated by bumpver
 description = "A simple Checker to see the naturalisation process"
 readme = "README.md"
 requires-python = ">=3.11,<3.14"
@@ -79,7 +79,7 @@ anef_checker_gui = "anef_checker.gui.gui:main"
 ###############################################################################
 
 [tool.bumpver]
-current_version = "0.1.0"
+current_version = "1.0.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "chore: bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"

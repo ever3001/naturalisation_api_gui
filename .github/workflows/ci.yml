@@ -89,11 +89,7 @@ jobs:
 
       - name: Build executable
         run: |
-          if [ "${{ matrix.os }}" == "windows-latest" ]; then
-            uv run flet pack --name ${{ matrix.asset_name }} src/anef_checker/gui/gui.py --icon assets/img/favicon.png --yes --pyinstaller-build-args="--console" --add-data "src/anef_checker/database/status_data.json;database"
-          else
-            uv run flet pack --name ${{ matrix.asset_name }} src/anef_checker/gui/gui.py --icon assets/img/favicon.png --yes --pyinstaller-build-args="--console" --add-data "src/anef_checker/database/status_data.json:database"
-          fi
+          uv run flet pack --name ${{ matrix.asset_name }} src/anef_checker/gui/gui.py --icon assets/img/favicon.png --yes --pyinstaller-build-args="--console" --add-data "src/anef_checker/database/status_data.json:database"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

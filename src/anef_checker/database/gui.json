@@ -1,0 +1,35 @@
+{
+    "en": {
+        "app_title": "Naturalization Status Checker",
+        "username_label": "Username",
+        "password_label": "Password",
+        "url_label": "ANEF URL",
+        "language_label": "Language",
+        "check_button": "Check Status",
+        "error_prefix": "An error occurred: ",
+        "api_code_prefix": "API Code:",
+        "description_prefix": "Description:"
+    },
+    "fr": {
+        "app_title": "Vérificateur de Statut de Naturalisation",
+        "username_label": "Nom d'utilisateur",
+        "password_label": "Mot de passe",
+        "url_label": "URL ANEF",
+        "language_label": "Langue",
+        "check_button": "Vérifier le Statut",
+        "error_prefix": "Une erreur s'est produite: ",
+        "api_code_prefix": "Code API:",
+        "description_prefix": "Description:"
+    },
+    "es": {
+        "app_title": "Verificador de Estado de Naturalización",
+        "username_label": "Nombre de usuario",
+        "password_label": "Contraseña",
+        "url_label": "URL de ANEF",
+        "language_label": "Idioma",
+        "check_button": "Verificar Estado",
+        "error_prefix": "Se produjo un error: ",
+        "api_code_prefix": "Código API:",
+        "description_prefix": "Descripción:"
+    }
+}

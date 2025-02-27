@@ -14,6 +14,7 @@ from typing import (
     Type,
 )
 
+from loguru import logger
 from pydantic import (
     BaseModel,
     field_validator,
@@ -21,9 +22,10 @@ from pydantic import (
 
 from anef_checker.constants.anef_enums import (
     APICodeEnum,
-    LanguageEnum,
     ServiceEnum,
-    StageEnum,
+)
+from anef_checker.constants.common import (
+    LanguageEnum,
 )
 
 
@@ -38,7 +40,7 @@ class StatusEntry(BaseModel):
     """Represents a status entry in the ANEF tracking system."""
 
     index: Optional[str] = None
-    stage: StageEnum
+    stage: Optional[str] = None
     service: Optional[ServiceEnum] = None
     api_code: APICodeEnum
     comments: Optional[List[CommentEntry]] = None
@@ -51,7 +53,8 @@ class StatusEntry(BaseModel):
             try:
                 return APICodeEnum[value.upper()]  # Convert to uppercase and match enum key
             except KeyError:
-                raise ValueError(f'Invalid API code: {value}') from None  # Raise an error if no match found
+                logger.error(f'Invalid API code: {value}')
+                return APICodeEnum.UNKNOWN
         return value
 
 

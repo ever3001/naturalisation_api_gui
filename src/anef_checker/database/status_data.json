@@ -1,29 +1,58 @@
 {
     "statuses": [
         {
-            "index": null,
+            "index": "0",
             "stage": "Création de la demande",
             "service": "ANEF",
             "api_code": "DRAFT",
-            "comments": null
+            "descriptions": [
+                {
+                    "en": "Draft"
+                },
+                {
+                    "fr": "draft"
+                },
+                {
+                    "es": "Borrador"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
         },
         {
             "index": "1.1",
-            "stage": "Dépôt de la demande",
+            "stage": "Demande envoyée",
             "service": "PREFECTURE",
             "api_code": "VERIFICATION_FORMELLE_A_TRAITER",
+            "descriptions": [
+                {
+                    "en": "Formal verification: to be processed"
+                },
+                {
+                    "fr": "Vérification formelle : à traiter"
+                },
+                {
+                    "es": "Verificación formal: por tramitar"
+                }
+            ],
             "comments": [
                 {
-                    "language": "en",
-                    "comment": "The competent prefecture has received your request. You have received an email with your national number. Your file is in the queue for the first screening."
+                    "en": null
                 },
                 {
-                    "language": "fr",
-                    "comment": "La préfecture compétente a bien reçu votre demande. Vous avez reçu un mail contenant votre numéro national. Votre dossier est dans la file d'attente pour effectuer le premier tri."
+                    "fr": null
                 },
                 {
-                    "language": "es",
-                    "comment": "La prefectura competente ha recibido su solicitud. Ha recibido un correo electrónico con su número nacional. Su expediente está en la cola de espera para la primera revisión."
+                    "es": null
                 }
             ]
         },
@@ -32,18 +61,1118 @@
             "stage": "Examen des pièces en cours",
             "service": "PREFECTURE",
             "api_code": "VERIFICATION_FORMELLE_EN_COURS",
+            "descriptions": [
+                {
+                    "en": "Formal verification: in progress"
+                },
+                {
+                    "fr": "Vérification formelle : en cours"
+                },
+                {
+                    "es": "Verificación formal: en curso"
+                }
+            ],
             "comments": [
                 {
-                    "language": "en",
-                    "comment": "The prefecture is conducting the first screening to check if your request is valid. This is a quick 'formal' verification."
+                    "en": null
                 },
                 {
-                    "language": "fr",
-                    "comment": "La préfecture est en train de faire le premier tri sur votre dossier pour voir si votre demande tient la route, c'est une vérification rapide ('formelle')."
+                    "fr": null
                 },
                 {
-                    "language": "es",
-                    "comment": "La prefectura está realizando la primera revisión para verificar si su solicitud es válida. Se trata de una verificación rápida ('formal')."
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "2.1.2",
+            "stage": "Examen des pièces en cours",
+            "service": "PREFECTURE",
+            "api_code": "VERIFICATION_FORMELLE_MISE_EN_DEMEURE",
+            "descriptions": [
+                {
+                    "en": "Formal verification: formal notice"
+                },
+                {
+                    "fr": "Vérification formelle : mise en demeure"
+                },
+                {
+                    "es": "Verificación formal: notificación formal"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "2.1.3",
+            "stage": "Examen des pièces en cours",
+            "service": "PREFECTURE",
+            "api_code": "CSS_MISE_EN_DEMEURE_A_AFFECTER",
+            "descriptions": [
+                {
+                    "en": "CSS: formal notice to be assigned"
+                },
+                {
+                    "fr": "CSS : mise en demeure à affecter"
+                },
+                {
+                    "es": "CSS: notificación formal por asignar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "2.1.4",
+            "stage": "Examen des pièces en cours",
+            "service": "PREFECTURE",
+            "api_code": "CSS_MISE_EN_DEMEURE_A_REDIGER",
+            "descriptions": [
+                {
+                    "en": "CSS: formal notice to be drafted"
+                },
+                {
+                    "fr": "CSS : mise en demeure à rédiger"
+                },
+                {
+                    "es": "CSS: notificación formal por redactar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "3.1",
+            "stage": "Dépôt de la demande",
+            "service": "PREFECTURE",
+            "api_code": "INSTRUCTION_A_AFFECTER",
+            "descriptions": [
+                {
+                    "en": "Instruction: to be assigned"
+                },
+                {
+                    "fr": "Instruction : à affecter"
+                },
+                {
+                    "es": "Instrucción: por asignar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "4.1.1",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "INSTRUCTION_RECEPISSE_COMPLETUDE_A_ENVOYER",
+            "descriptions": [
+                {
+                    "en": "Instruction: completeness receipt to be sent"
+                },
+                {
+                    "fr": "Instruction : récépissé de complétude à envoyer"
+                },
+                {
+                    "es": "Instrucción: recibo de completitud por enviar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "4.1.2",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "INSTRUCTION_RECEPISSE_COMPLETUDE_A_ENVOYER_RETOUR_COMPLEMENT_A_TRAITER",
+            "descriptions": [
+                {
+                    "en": "Instruction: completeness receipt to be sent (additional documents to be processed)"
+                },
+                {
+                    "fr": "Instruction : récépissé de complétude à envoyer (retour complément à traiter)"
+                },
+                {
+                    "es": "Instrucción: recibo de completitud por enviar (documentos adicionales por tramitar)"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "5.1.1",
+            "stage": "Réception du récépissé de complétude",
+            "service": "PREFECTURE",
+            "api_code": "INNTRUCTION_DATE_EA_A_FIXER",
+            "descriptions": [
+                {
+                    "en": "Instruction: date of assimilation interview to be scheduled"
+                },
+                {
+                    "fr": "Instruction : date d'entretien d'assimilation à fixer"
+                },
+                {
+                    "es": "Instrucción: fecha de la entrevista de asimilación por fijar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "5.1.2",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "EA_DEMANDE_REPORT_EA",
+            "descriptions": [
+                {
+                    "en": "Assimilation interview: request for postponement of the assimilation interview"
+                },
+                {
+                    "fr": "Entretien d'assimilation : demande de report de l'entretien d'assimilation"
+                },
+                {
+                    "es": "Entrevista de asimilación: solicitud de aplazamiento de la entrevista de asimilación"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "6.1",
+            "stage": "Entretien d'assimilation",
+            "service": "PREFECTURE",
+            "api_code": "EA_EN_ATTENTE_EA",
+            "descriptions": [
+                {
+                    "en": "Assimilation interview: waiting for the assimilation interview"
+                },
+                {
+                    "fr": "Entretien d'assimilation : en attente de l'entretien d'assimilation"
+                },
+                {
+                    "es": "Entrevista de asimilación: en espera de la entrevista de asimilación"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "7.1",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "EA_CREA_A_VALIDER",
+            "descriptions": [
+                {
+                    "en": "Assimilation interview: report of the assimilation interview to be validated"
+                },
+                {
+                    "fr": "Entretien d'assimilation : compte-rendu de l'entretien d'assimilation à valider"
+                },
+                {
+                    "es": "Entrevista de asimilación: informe de la entrevista de asimilación por validar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.1",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "PROP_DECISION_PREF_A_EFFECTUER",
+            "descriptions": [
+                {
+                    "en": "Prefectural decision proposal: to be carried out"
+                },
+                {
+                    "fr": "Proposition de décision préfectorale : à effectuer"
+                },
+                {
+                    "es": "Propuesta de decisión prefectural: por realizar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.2",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "PROP_DECISION_PREF_EN_ATTENTE_RETOUR_HIERARCHIQUE",
+            "descriptions": [
+                {
+                    "en": "Prefectural decision proposal: awaiting hierarchical feedback"
+                },
+                {
+                    "fr": "Proposition de décision préfectorale : en attente de retour hiérarchique"
+                },
+                {
+                    "es": "Propuesta de decisión prefectural: en espera de respuesta jerárquica"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.3",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "PROP_DECISION_PREF_PROP_A_EDITER",
+            "descriptions": [
+                {
+                    "en": "Prefectural decision proposal: proposal to be issued"
+                },
+                {
+                    "fr": "Proposition de décision préfectorale : proposition à éditer"
+                },
+                {
+                    "es": "Propuesta de decisión prefectural: propuesta por emitir"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.4",
+            "stage": "Traitement en cours",
+            "service": "PREFECTURE",
+            "api_code": "PROP_DECISION_PREF_EN_ATTENTE_RETOUR_SIGNATURE",
+            "descriptions": [
+                {
+                    "en": "Prefectural decision proposal: awaiting signature feedback"
+                },
+                {
+                    "fr": "Proposition de décision préfectorale : en attente de retour de signature"
+                },
+                {
+                    "es": "Propuesta de decisión prefectural: en espera de devolución de la firma"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.5",
+            "stage": "Traitement en cours",
+            "service": "SDANF",
+            "api_code": "CONTROLE_A_AFFECTER",
+            "descriptions": [
+                {
+                    "en": "Control: to be assigned"
+                },
+                {
+                    "fr": "Contrôle : à affecter"
+                },
+                {
+                    "es": "Control: por asignar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.6",
+            "stage": "Traitement en cours",
+            "service": "SDANF",
+            "api_code": "CONTROLE_A_EFFECTUER",
+            "descriptions": [
+                {
+                    "en": "Control: to be performed"
+                },
+                {
+                    "fr": "Contrôle : à effectuer"
+                },
+                {
+                    "es": "Control: por realizar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "SCEC",
+            "api_code": "CONTROLE_EN_ATTENTE_PEC",
+            "descriptions": [
+                {
+                    "en": "Control: awaiting civil status document"
+                },
+                {
+                    "fr": "Contrôle : en attente de pièce d'état civil"
+                },
+                {
+                    "es": "Control: en espera de un documento de estado civil"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "SCEC",
+            "api_code": "CONTROLE_PEC_A_FAIRE",
+            "descriptions": [
+                {
+                    "en": "Control: civil status document to be done"
+                },
+                {
+                    "fr": "Contrôle : pièce d'état civil à faire"
+                },
+                {
+                    "es": "Control: documento de estado civil por hacer"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "SDANF",
+            "api_code": "CONTROLE_TRANSMISE_POUR_DECRET",
+            "descriptions": [
+                {
+                    "en": "Control: transmitted for decree"
+                },
+                {
+                    "fr": "Contrôle : transmise pour décret"
+                },
+                {
+                    "es": "Control: transmitido para decreto"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "SDANF",
+            "api_code": "CONTROLE_EN_ATTENTE_RETOUR_HIERARCHIQUE",
+            "descriptions": [
+                {
+                    "en": "Control: awaiting hierarchical feedback"
+                },
+                {
+                    "fr": "Contrôle : en attente de retour hiérarchique"
+                },
+                {
+                    "es": "Control: en espera de respuesta jerárquica"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "SDANF",
+            "api_code": "CONTROLE_DECISION_A_EDITER",
+            "descriptions": [
+                {
+                    "en": "Control: decision to be issued"
+                },
+                {
+                    "fr": "Contrôle : décision à éditer"
+                },
+                {
+                    "es": "Control: decisión por emitir"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "SDANF",
+            "api_code": "CONTROLE_EN_ATTENTE_SIGNATURE",
+            "descriptions": [
+                {
+                    "en": "Control: awaiting signature"
+                },
+                {
+                    "fr": "Contrôle : en attente de signature"
+                },
+                {
+                    "es": "Control: en espera de firma"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "TRANSMIS_A_AC",
+            "descriptions": [
+                {
+                    "en": "Transmitted to AC"
+                },
+                {
+                    "fr": "Transmis à AC"
+                },
+                {
+                    "es": "Transmitido a AC"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "A_VERIFIER_AVANT_INSERTION_DECRET",
+            "descriptions": [
+                {
+                    "en": "To be verified before insertion into the decree"
+                },
+                {
+                    "fr": "À vérifier avant l'insertion dans le décret"
+                },
+                {
+                    "es": "Por verificar antes de la inserción en el decreto"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.7",
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "PRETE_POUR_INSERTION_DECRET",
+            "descriptions": [
+                {
+                    "en": "Ready for insertion into the decree"
+                },
+                {
+                    "fr": "Prêt pour l'insertion dans le décret"
+                },
+                {
+                    "es": "Listo para la inserción en el decreto"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": "8.8",
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "INSEREE_DANS_DECRET",
+            "descriptions": [
+                {
+                    "en": "Inserted into the decree"
+                },
+                {
+                    "fr": "Insérée dans le décret"
+                },
+                {
+                    "es": "Insertada en el decreto"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "DECRET_NATURALISATION_PUBLIC",
+            "descriptions": [
+                {
+                    "en": "Naturalization decree published"
+                },
+                {
+                    "fr": "Décret de naturalisation publié"
+                },
+                {
+                    "es": "Decreto de naturalización publicado"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "DECRET_EN_PREPARATION",
+            "descriptions": [
+                {
+                    "en": "Decree in preparation"
+                },
+                {
+                    "fr": "Décret en préparation"
+                },
+                {
+                    "es": "Decreto en preparación"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "DECRET_A_QUALIFIER",
+            "descriptions": [
+                {
+                    "en": "Decree to be qualified"
+                },
+                {
+                    "fr": "Décret à qualifier"
+                },
+                {
+                    "es": "Decreto por calificar"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Traitement en cours",
+            "service": "DECRET",
+            "api_code": "DECRET_EN_VALIDATION",
+            "descriptions": [
+                {
+                    "en": "Decree under validation"
+                },
+                {
+                    "fr": "Décret en validation"
+                },
+                {
+                    "es": "Decreto en validación"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "CSS_EN_DELAIS_RECOURS",
+            "descriptions": [
+                {
+                    "en": "CSS in appeal period"
+                },
+                {
+                    "fr": "CSS en délais de recours"
+                },
+                {
+                    "es": "CSS en plazo de recurso"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "DECISION_NEGATIVE_EN_DELAIS_RECOURS",
+            "descriptions": [
+                {
+                    "en": "Negative decision in appeal period"
+                },
+                {
+                    "fr": "Décision négative en délais de recours"
+                },
+                {
+                    "es": "Decisión negativa en plazo de recurso"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "IRRECEVABILITE_MANIFESTE",
+            "descriptions": [
+                {
+                    "en": "Obvious inadmissibility"
+                },
+                {
+                    "fr": "Irrecevabilité manifeste"
+                },
+                {
+                    "es": "Inadmisibilidad manifiesta"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "DECISION_NOTIFIEE",
+            "descriptions": [
+                {
+                    "en": "Decision notified"
+                },
+                {
+                    "fr": "Décision notifiée"
+                },
+                {
+                    "es": "Decisión notificada"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "CSS_NOTIFIE",
+            "descriptions": [
+                {
+                    "en": "CSS notified"
+                },
+                {
+                    "fr": "CSS notifié"
+                },
+                {
+                    "es": "CSS notificado"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "DEMANDE_EN_COURS_RAPO",
+            "descriptions": [
+                {
+                    "en": "Request in progress (RAPO)"
+                },
+                {
+                    "fr": "Demande en cours RAPO"
+                },
+                {
+                    "es": "Solicitud en curso (RAPO)"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "CONTROLE_DEMANDE_NOTIFIEE",
+            "descriptions": [
+                {
+                    "en": "Control: request notified"
+                },
+                {
+                    "fr": "Contrôle : demande notifiée"
+                },
+                {
+                    "es": "Control: solicitud notificada"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": "Décision statuée",
+            "service": null,
+            "api_code": "DECRET_PUBLIE",
+            "descriptions": [
+                {
+                    "en": "Decree published"
+                },
+                {
+                    "fr": "Décret publié"
+                },
+                {
+                    "es": "Decreto publicado"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
+                }
+            ]
+        },
+        {
+            "index": null,
+            "stage": null,
+            "service": null,
+            "api_code": "UNKNOWN",
+            "descriptions": [
+                {
+                    "en": "Unknown"
+                },
+                {
+                    "fr": "Unknown"
+                },
+                {
+                    "es": "Desconocido"
+                }
+            ],
+            "comments": [
+                {
+                    "en": null
+                },
+                {
+                    "fr": null
+                },
+                {
+                    "es": null
                 }
             ]
         }
